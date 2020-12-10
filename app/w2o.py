@@ -6,7 +6,7 @@ app = Flask(__name__)
 #Create a route decorator to tell the application, which URL should be called for the #described function and define the function
 @app.route('/hello')
 def hello():
-    return jsonify(app="HelloWorld")
+    return jsonify(message="hello world")
 
 @app.route('/')
 def rootresponse():
