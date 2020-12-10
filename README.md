@@ -20,6 +20,7 @@ My plan is basically:
         - "/hello" responds with a HelloWorld message dict
 - Deploy nginx into a container with a dependency on the Flask app
 - Provide a docker-compose file to stand up the demo
+- Provide some manifests to deploy to a Kubernetes cluster
 
 Things I'm not doing here:
 - I'm not optimizing the container builds
