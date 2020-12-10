@@ -1,0 +1,19 @@
+version: "2"
+services:
+  app:
+    container_name: w2oapp
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+#    ports:
+#      - "5000:5000"
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ../
+      dockerfile: deployments/nginx/Dockerfile
+    depends_on:
+      - app
+    ports:
+      - 8080:80
