@@ -1,6 +1,11 @@
-Basic REST endpoint w2o
+# Basic REST endpoint w2o
 
 This is a problem that has been solved a million times by a million others so I assume my solution is not really anything different than would be expected.
+
+```
+deployments/docker-compose up
+
+```
 
 My plan is basically:
 
